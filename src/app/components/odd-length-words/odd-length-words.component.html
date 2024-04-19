@@ -1,0 +1,14 @@
+<div class="d-flex flex-column align-items-center">
+   <p class="fw-bold text-decoration-underline">Odd Length Words</p>
+   <p class="text-danger">{{ oddWord }}</p>   
+   @if (oddsArray.length !== 0) {
+     <ul class="list-unstyled">
+       <li *ngFor="let word of oddsArray">
+         {{ word }}
+       </li>
+     </ul>
+   } @else {
+     <p>No odd length words</p>
+   }
+ </div>
+ 

@@ -1,0 +1,14 @@
+<div class="d-flex flex-column align-items-center">
+   <p class="fw-bold text-decoration-underline">Odd Length Words</p>
+   <p class="text-danger">{{ evenWord }}</p>   
+   @if (evensArray.length !== 0) {
+     <ul class="list-unstyled">
+       <li *ngFor="let word of evensArray">
+         {{ word }}
+       </li>
+     </ul>
+   } @else {
+     <p>No even length words</p>
+   }
+ </div>
+ 
